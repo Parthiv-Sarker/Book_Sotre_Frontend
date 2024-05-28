@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loader {
+	@apply border-gray-300; /* Background border color */
+	border-top-color: rgb(0, 81, 255); /*Spinner color*/
+	animation: spin 2s linear infinite;
+}
+
+@keyframes text-fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated-text {
+	display: inline-block;
+	opacity: 0;
+	animation: text-fade-in 2s ease-in-out forwards;
+}
+
+/* Promise animatin */
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.animate-pulse {
+	animation: pulse 1.5s infinite;
+}
