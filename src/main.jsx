@@ -48,10 +48,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<KindeProvider
-			clientId="82b1e8661f1240298737a77650a3ef72"
-			domain="https://bookbazaar.kinde.com"
-			redirectUri="https://book-sotre-frontend.vercel.app"
-			logoutUri="https://book-sotre-frontend.vercel.app"
+			clientId={clientId}
+			domain={domain}
+			redirectUri={redirectUri}
+			logoutUri={logoutUri}
 		>
 			<RouterProvider router={router} />
 		</KindeProvider>
