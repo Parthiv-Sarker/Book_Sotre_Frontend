@@ -50,8 +50,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 		<KindeProvider
 			clientId={clientId}
 			domain={domain}
-			redirectUri={redirectUri}
-			logoutUri={logoutUri}
+			redirectUri="https://book-sotre-frontend.vercel.app"
+			logoutUri="https://book-sotre-frontend.vercel.app"
 		>
 			<RouterProvider router={router} />
 		</KindeProvider>
